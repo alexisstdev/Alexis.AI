@@ -23,7 +23,7 @@ export default function CreatePost() {
     }
     setUploading(true);
     try {
-      const res = await fetch('http://localhost:3000/api/v1/post', {
+      const res = await fetch('https://alexisdev-ai.onrender.com/api/v1/post', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ export default function CreatePost() {
 
     try {
       setGeneratingImage(true);
-      const res = await fetch('http://localhost:3000/api/v1/dalle', {
+      const res = await fetch('https://alexisdev-ai.onrender.com/api/v1/dalle', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

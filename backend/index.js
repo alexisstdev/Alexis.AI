@@ -4,18 +4,6 @@ import cors from 'cors';
 import connectDB from './mongodb/connect.js';
 import dalleRoutes from './routes/dalleRoutes.js';
 import postRoutes from './routes/postRoutes.js';
-import { initializeApp } from 'firebase/app';
-
-const firebaseConfig = {
-  apiKey: 'AIzaSyDI8NjAmt1E6y7gOHcZMUzbyeGr170whoI',
-  authDomain: 'alexis-ai-d2e7a.firebaseapp.com',
-  projectId: 'alexis-ai-d2e7a',
-  storageBucket: 'alexis-ai-d2e7a.appspot.com',
-  messagingSenderId: '744319596242',
-  appId: '1:744319596242:web:f9a0b08645933c5d4e9f0b',
-};
-
-const app2 = initializeApp(firebaseConfig);
 
 dotenv.config();
 const app = express();

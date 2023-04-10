@@ -1,0 +1,75 @@
+.home-title {
+  font-size: var(--text-xl);
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.home-description {
+  text-align: center;
+  font-size: var(--text-sm);
+  margin-top: 1rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+input[type='search'] {
+  background-color: var(--dark-secondary);
+  border-radius: 0.7rem;
+  border: none;
+  outline: none;
+  font-size: var(--text-sm);
+  padding-block: 0.7rem;
+  padding-inline: 1.4rem;
+  min-width: 100%;
+  color: var(--text-secondary);
+}
+
+.home-loader {
+  display: flex;
+  justify-content: center;
+}
+
+.form-image {
+  border: 1px solid var(--text-secondary);
+  width: fit-content;
+  margin: 2rem auto;
+}
+
+.form-image img {
+  max-width: 20rem;
+  object-fit: contain;
+}
+
+.generating-img {
+  top: 0;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+  gap: 1rem;
+}
+
+.home-grid > *:only-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 33%;
+}
+
+.home-grid > h2 {
+  text-align: center;
+}
+.home-loader > h2 {
+  margin-bottom: 4rem;
+}

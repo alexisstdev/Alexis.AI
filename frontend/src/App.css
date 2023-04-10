@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --font-family: 'Noto Sans', sans-serif;
+  --bgcolor: #000;
+  --text-primary: #fff;
+  --text-secondary: #ddd;
+  --text-tertiary: #4f4f52;
+  --accent-color: #3db46d;
+  --dark-secondary: #2e2e2e;
+  --text-xs: clamp(0.4rem, calc(1rem + 0.03vw), 1.3rem);
+  --text-sm: clamp(1.2rem, calc(1rem + 0.11vw), 1.6rem);
+  --text-base: clamp(1.4rem, calc(1.5rem + 0.22vw), 1.9rem);
+  --text-lg: clamp(1.9rem, calc(1.9rem + 0.37vw), 2.2rem);
+  --text-xl: clamp(2.2rem, calc(2.2rem + 0.58vw), 2.5rem);
+  --text-2xl: clamp(2.5rem, calc(2.5rem + 0.87vw), 2.8rem);
+  --text-3xl: clamp(2.8rem, calc(2.8rem + 1.25vw), 3.1rem);
+  --text-4xl: clamp(3.1rem, calc(3.1rem + 1.77vw), 3.4rem);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  color: var(--text-primary);
+}
+
+body {
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  background-color: var(--bgcolor);
+}
+
+p {
+  line-height: 1.7rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.nav-logo {
+  width: 8rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
+}
+
+.nav-link {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: var(--accent-color);
+  color: white;
+  padding-inline: 2.5rem;
+  padding-block: 0.7rem;
+  font-size: var(--text-xs);
+  border-radius: 0.7rem;
+  border: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: var(--text-sm);
+}
+
+.logo > img {
+  width: 2rem;
+}

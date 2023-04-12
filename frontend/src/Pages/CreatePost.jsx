@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Loader } from '../Components/index';
 import { getRandomPrompt } from '../utils';
-import { nanoid } from 'nanoid';
 
 export default function CreatePost() {
   const [generatingImage, setGeneratingImage] = useState(false);

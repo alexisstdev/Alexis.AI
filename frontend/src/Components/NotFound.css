@@ -1,0 +1,7 @@
+.notfound > h1 {
+  font-size: var(--text-3xl);
+}
+
+.notfound > p {
+  font-size: var(--text-sm);
+}

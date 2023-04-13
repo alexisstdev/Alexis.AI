@@ -66,7 +66,7 @@ export default function Home() {
             title='No search results'
           />
         ) : (
-          <RenderCards data={posts} title='No posts found' />
+          <RenderCards data={posts} />
         )}
       </div>
     </div>

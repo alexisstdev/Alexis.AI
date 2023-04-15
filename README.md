@@ -1,2 +1,2 @@
-# alexis.ai
+# Alexis.AI Image Generation 
 Fullstack MERN application, this personal project is an image generation tool that utilizes DALL-E to create unique and beautiful images. With this tool, users can easily generate and share their creations with the community. The project also incorporates MongoDB to store the data and Cloudinary to manage and optimize the images. The user interface is built using React, providing a simple and intuitive experience for users.
